@@ -1,14 +1,21 @@
 <resources>
 
    <!-- Base application theme. -->
-    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/sunshine_blue</item>
         <item name="colorPrimaryDark">@color/sunshine_dark_blue</item>
     </style>
 
     <!-- Main activity theme. -->
     <style name="ForecastTheme" parent="AppTheme">
-        <item name="actionBarStyle">@style/ActionBar.Solid.Sunshine.NoTitle</item>
+        <item name="actionBarTheme">@style/ActionBar.Solid.Sunshine.Logo</item>
+        <item name="actionBarPopupTheme">@style/Theme.AppCompat.Light</item>
+    </style>
+
+    <!-- Detail activity theme. -->
+    <style name="DetailTheme" parent="AppTheme">
+        <item name="actionBarTheme">@style/ActionBar.Solid.Sunshine.Title</item>
+        <item name="actionBarPopupTheme">@style/Theme.AppCompat.Light</item>
     </style>
 
     <!-- Settings activity theme. -->
@@ -16,9 +23,16 @@
     </style>
 
     <!-- main activity action bar styles -->
-    <style name="ActionBar.Solid.Sunshine.NoTitle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
-        <item name="displayOptions">useLogo|showHome</item>
+    <style name="ActionBar.Solid.Sunshine" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/sunshine_blue</item>
+        <item name="displayOptions">showHome|homeAsUp</item>
+    </style>
+    <style name="ActionBar.Solid.Sunshine.Logo">
+        <item name="displayOptions">useLogo</item>
         <item name="logo">@drawable/ic_logo</item>
+    </style>
+    <style name="ActionBar.Solid.Sunshine.Title">
+        <item name="displayOptions">showTitle</item>
     </style>
 
     <!-- Style for forecast listview -->
