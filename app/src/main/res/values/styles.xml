@@ -20,6 +20,9 @@
 
     <!-- Settings activity theme. -->
     <style name="SettingsTheme" parent="AppTheme">
+        <item name="actionBarTheme">@style/ActionBar.Solid.Sunshine</item>
+        <item name="actionBarPopupTheme">@style/Popup.Sunshine</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
     </style>
 
     <!-- main activity action bar styles -->
