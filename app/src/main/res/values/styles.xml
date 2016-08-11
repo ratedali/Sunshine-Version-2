@@ -9,13 +9,13 @@
     <!-- Main activity theme. -->
     <style name="ForecastTheme" parent="AppTheme">
         <item name="actionBarTheme">@style/ActionBar.Solid.Sunshine.Logo</item>
-        <item name="actionBarPopupTheme">@style/Theme.AppCompat.Light</item>
+        <item name="actionBarPopupTheme">@style/Popup.Sunshine</item>
     </style>
 
     <!-- Detail activity theme. -->
     <style name="DetailTheme" parent="AppTheme">
         <item name="actionBarTheme">@style/ActionBar.Solid.Sunshine.Title</item>
-        <item name="actionBarPopupTheme">@style/Theme.AppCompat.Light</item>
+        <item name="actionBarPopupTheme">@style/Popup.Sunshine</item>
     </style>
 
     <!-- Settings activity theme. -->
@@ -33,6 +33,9 @@
     </style>
     <style name="ActionBar.Solid.Sunshine.Title">
         <item name="displayOptions">showTitle</item>
+    </style>
+    <style name="Popup.Sunshine" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@android:color/white</item>
     </style>
 
     <!-- Style for forecast listview -->
